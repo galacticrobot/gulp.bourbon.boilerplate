@@ -1,0 +1,53 @@
+/*==========================================================================
+  ##Gulping
+
+  September 2014
+===========================================================================*/
+
+//--------------------------------------------------------------------------
+//  Base
+//--------------------------------------------------------------------------
+
+@import "base/normalize";
+@import "base/html5bp";
+
+//--------------------------------------------------------------------------
+//  Bourbon
+//--------------------------------------------------------------------------
+
+@import "bourbon";
+@import "neat";
+
+//--------------------------------------------------------------------------
+//  Temp
+//--------------------------------------------------------------------------
+
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+body {
+    background-color: hotpink;
+    font-family: Lato;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    color: lighten(hotpink, 20%);
+}
+
+.main-container {
+    width: 500px;
+    @include outer-container;
+}
+
+a {
+    color: darken(hotpink, 60%);
+}
+
+.box {
+    margin-top: 30px;
+    display: inline-block;
+    background-color: darken(hotpink, 5%);
+    padding: 20px;
+}
+
